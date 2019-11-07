@@ -2,7 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import dhsLogo from "./dhs_logo_official_0.png"
+import dhsLogo from "./images/dhs_logo_official_0.png"
  
 import Home from './components/Home/Home';
 import About from './components/About/About';
@@ -39,7 +39,13 @@ function App() {
       </div> */}
 
       <footer className="footer">
-        <img src={dhsLogo} alt="dhs logo"/>
+        <p>Home</p>
+        <p>Privacy Policy</p>
+        <p>NICCS Policy</p>
+        <p>FOIA Policy</p>
+        <p>No Fear Act Policy</p>
+        <p>Accessibility</p>
+        <img src={dhsLogo} alt="dhs logo" id="dhsLogo"/>
       </footer>
 
 
