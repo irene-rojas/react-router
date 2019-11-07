@@ -1,0 +1,7 @@
+.navDiv {
+  background-color: rgb(162, 162, 162);
+}
+
+.navLinkHome, .navLinkAbout, .navLinkContact {
+  color: white;
+}
