@@ -11,6 +11,8 @@ import Error from './components/Error/Error';
 import Navigation from './components/Navigation/Navigation';
 import Education from "./components/Education/Education";
 import Develop from "./components/Develop/Develop";
+import NICCS_Policy from "./components/NICCS_Policy/NICCS_Policy";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -28,25 +30,27 @@ function App() {
                 <Route path="/develop" component={Develop}/>
                 <Route component={Error}/>
               </Switch>
+              <footer>
+                <Footer />
+                  <Switch>
+                    <Route path="/niccs_policy" component={NICCS_Policy} />
+                  </Switch>
+              </footer>
             </div> 
           </BrowserRouter>
       </div>
 
-      {/* <div className="logoDiv">
-        This is in App. It should appear on all pages.
-        <br/>
-        <img src={logo} alt="React Logo" className="logoImg" />
-      </div> */}
+      
 
-      <footer className="footer">
-        <p>Home</p>
+      {/* <footer className="footer">
+        <p><a href="/">Home</a></p>
         <p>Privacy Policy</p>
-        <p>NICCS Policy</p>
+        <p><a href="/niccs_policy">NICCS Policy</a></p>
         <p>FOIA Policy</p>
         <p>No Fear Act Policy</p>
         <p>Accessibility</p>
         <img src={dhsLogo} alt="dhs logo" id="dhsLogo"/>
-      </footer>
+      </footer> */}
 
 
     </div> // end App
