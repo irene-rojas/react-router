@@ -35,7 +35,7 @@
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(7, auto);
-    vertical-align: center;;
+    vertical-align: center;
 }
 
 .footerHome {

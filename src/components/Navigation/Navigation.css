@@ -11,7 +11,6 @@
   width: 9.4em;
   margin: 0;
   border: 0;
-  /* align-self: left; */
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -36,13 +35,26 @@
 .navText {
   font-family: "Open Sans", Arial;
   font-size: 16px;
-  color: rgb(0, 0, 0);
+  color: #000;
   text-decoration: none;
+  vertical-align: center;
+  text-align: center;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  white-space: nowrap;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-stretch: 100%;
+  font-style: normal;
+  margin: auto;
 }
 
 .navLinkTraining {
-  grid-row: 1/-1;
+  grid-row: 1/2;
   grid-column: 2/3;
+  vertical-align: center;
 }
 
 .navLinkEdu {
@@ -63,4 +75,12 @@
 #search {
   grid-row: 1/-1;
   grid-column: 6/7;
+  border-left: 2px solid #000;
+  padding: 10px 0px 10px 10px;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  z-index: 999;
+  height: 25px;
+  line-height: 23px;
 }
