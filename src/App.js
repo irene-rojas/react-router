@@ -22,7 +22,12 @@ function App() {
     <div className="App">
 
       <header>
+        <div className="dhsHeader">
+          <p>Official website of the Department of Homeland Security</p>
+        </div>
+
         <Navigation />
+        {/* this is navDiv */}
           <Switch>
           <Route path="/" component={Home} exact/>
           <Route path="/about" component={About}/>

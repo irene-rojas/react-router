@@ -4,15 +4,30 @@ html, body {
 
 .App {
   text-align: center;
+  display: grid;
+  grid-template-rows: 32.5px auto 1fr;
+  grid-template-columns: 1fr;
 }
 
-/* .logoImg {
-  width: 100px;
+header {
+  margin-top: 0px;
 }
 
-.logoDiv {
+p {
+  margin: 0px;
+}
+
+.dhsHeader {
+  text-align: center;
   background-color: black;
-} */
+  color: rgb(255, 255, 255);
+  font-family: "Times New Roman";
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: center;
+}
+
 
 .footer {
   /* background-color: black; */
