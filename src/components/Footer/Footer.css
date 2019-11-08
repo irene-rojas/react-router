@@ -1,0 +1,70 @@
+.footerNavDiv {
+    /* display: grid; */
+    /* grid-template-rows: auto; */
+    /* grid-template-columns: 1/-1; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 45px;
+    padding-bottom: 10px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 50px;
+}
+
+.footerText {
+    margin: auto;
+    padding-bottom: 0px;
+    padding-left: 8.133px;
+    padding-right: 8.133px;
+    padding-top: 0px;
+    text-align: left;
+    vertical-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.footerContent {
+    border-top: 1px solid rgb(204, 204, 204);
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(7, auto);
+    vertical-align: center;;
+}
+
+.footerHome {
+    grid-row: 1/2;;
+    grid-column: 1/2;
+}
+
+.footerPrivacy {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.footerNICCS {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.footerNoFear {
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+.footerAccess {
+    grid-row: 1/2;
+    grid-column: 5/6;
+}
+
+#dhsLogo {
+    grid-row: 1/2;
+    grid-column: 6/7;
+    padding-left: 50px;
+    width: 179px;
+    height: 61px;
+}
