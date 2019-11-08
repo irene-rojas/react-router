@@ -7,16 +7,19 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
        <div className="footerNavDiv">
-          <NavLink to="/" className="footerHome">Home</NavLink>
-          <br/>
-          {/* <p>Privacy Policy</p> */}
-          <NavLink to="/niccs_policy">NICCS Policy</NavLink>
-          <br/>
-          <NavLink to="/nofear" className="footerNoFear">No Fear Act Policy</NavLink>
-          <br/>
-          <NavLink to="/access" className="footerAccess">Accessibility</NavLink>
-          <br/>
-          <img src={dhsLogo} alt="DHS Logo" />
+           <div className="footerContent">
+            <NavLink to="/" className="footerHome footerText">Home</NavLink>
+            <br/>
+            <span className="footerPrivacy footerText">Privacy Policy</span>
+            <NavLink to="/niccs_policy" className="footerNICCS footerText">NICCS Policy</NavLink>
+            <br/>
+            <NavLink to="/nofear" className="footerNoFear footerText">No Fear Act Policy</NavLink>
+            <br/>
+            <NavLink to="/access" className="footerAccess footerText">Accessibility</NavLink>
+            <br/>
+            <img src={dhsLogo} alt="DHS Logo" id="dhsLogo" />
+
+           </div>
 
        </div>
     );
