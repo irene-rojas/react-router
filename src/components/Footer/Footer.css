@@ -26,6 +26,8 @@
     vertical-align: center;
     text-decoration: none;
     color: black;
+    font-family: "Open Sans", Arial;
+    font-size: 14px;
 }
 
 .footerContent {

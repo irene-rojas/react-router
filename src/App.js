@@ -14,6 +14,7 @@ import NICCS_Policy from "./components/NICCS_Policy/NICCS_Policy";
 import Footer from "./components/Footer/Footer";
 import NoFear from "./components/NoFear/NoFear";
 import Accessibility from "./components/Accessibility/Accessibility";
+import usFlag from "./images/icn-us-flag-21px.png";
 
 function App() {
   return (
@@ -22,7 +23,16 @@ function App() {
     <div className="App">
 
       <header>
+
+        <div className="dhsHeader">
+          
+          <p id="officialFed">
+            <img src={usFlag} id="usFlag" alt="US Flag signifying that this is United States Federal Government Website" />
+          Official website of the Department of Homeland Security</p>
+        </div>
+
         <Navigation />
+        {/* start navDiv */}
           <Switch>
           <Route path="/" component={Home} exact/>
           <Route path="/about" component={About}/>
@@ -31,6 +41,7 @@ function App() {
           <Route path="/develop" component={Develop}/>
           <Route component={Error}/>
         </Switch>
+        {/* end navDiv */}
 
       </header>
 
