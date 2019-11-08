@@ -1,6 +1,9 @@
 .navDiv {
   border-bottom-color: rgb(7, 117, 168);
   /* background-color: rgb(0, 0, 0); */
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(6, auto);
 }
 
 #niccsLogo {
@@ -9,6 +12,8 @@
   margin: 0;
   border: 0;
   /* align-self: left; */
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
 
 #niccsSlogan {
@@ -24,6 +29,8 @@
   color: #000;
   font-family: Arial;
   text-align: left;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 
 .navText {
@@ -31,4 +38,29 @@
   font-size: 16px;
   color: rgb(0, 0, 0);
   text-decoration: none;
+}
+
+.navLinkTraining {
+  grid-row: 1/-1;
+  grid-column: 2/3;
+}
+
+.navLinkEdu {
+  grid-row: 1/-1;
+  grid-column: 3/4;
+}
+
+.navLinkDev {
+  grid-row: 1/-1;
+  grid-column: 4/5;
+}
+
+.navLinkAbout {
+  grid-row: 1/-1;
+  grid-column: 5/6;
+}
+
+#search {
+  grid-row: 1/-1;
+  grid-column: 6/7;
 }
