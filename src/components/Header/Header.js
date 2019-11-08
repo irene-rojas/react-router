@@ -6,10 +6,6 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
 
-       <div className="masthead">
-         
-         
-
          <header className="headerDiv">
             
             <NavLink to="/" className="navLinkHome">Home</NavLink>
@@ -22,8 +18,7 @@ const Header = () => {
             <br/>
             <NavLink to="/develop" className="navLinkContact">Workforce Development</NavLink>
          </header>
-       </div>
-
+         
     );
 }
  
