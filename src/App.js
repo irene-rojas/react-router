@@ -22,7 +22,7 @@ function App() {
 
     <div className="App">
 
-      <header>
+      
 
         <div className="dhsHeader">
           
@@ -31,6 +31,7 @@ function App() {
           Official website of the Department of Homeland Security</p>
         </div>
 
+        <header>
         <Navigation />
         {/* start navDiv */}
           <Switch>
