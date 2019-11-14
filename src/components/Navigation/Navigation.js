@@ -10,6 +10,7 @@ const Navigation = () => {
        <div className="navDiv">
 
           <div className="inner-branding">
+             
             <Link to="/" className="LinkHome navText">
                <div className="topLogoDiv">
                   <img src={niccsLogo} id="niccsLogo" alt="National Initiative for Cybersecurity Careers and Studies" />
@@ -20,8 +21,12 @@ const Navigation = () => {
             <Link to="/education" className="LinkEdu navText">Formal Education</Link>
             <Link to="/develop" className="LinkDev navText">Workforce Development</Link>
             <Link to="/about" className="LinkAbout navText">About NICCS</Link>
-            <img src={search} alt="Search Button" id="search" />
+            <div className="searchIconDiv">
+               <img src={search} alt="Search Button" id="search" />
+            </div>
+
          </div>
+         {/* end inner-branding */}
 
        </div>
     );
