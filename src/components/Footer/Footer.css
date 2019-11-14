@@ -15,6 +15,7 @@
     padding-right: 1px;
     padding-top: 50px;
     background-color: white;
+    z-index: 1000;
 }
 
 .footerText {
@@ -70,4 +71,17 @@
     padding-left: 50px;
     width: 179px;
     height: 61px;
+}
+
+.niccsContentDiv {
+    background-color: white;
+    padding-bottom: 175px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 25fr 50fr 25fr;
+}
+
+.niccsBodyDiv {
+    grid-row: auto;
+    grid-column: 2/3;
 }

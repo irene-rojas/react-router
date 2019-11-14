@@ -17,10 +17,11 @@ function NICCSPolicy() {
     }, []);
 
     return (
-        <div>
-            <h2>{niccs.title}</h2>
-            <br/>
-            {niccsBody.value}
+        <div className="niccsContentDiv">
+            <div className="niccsBodyDiv">
+                {niccsBody.value}
+            </div>
+            
         </div>
     )
 
