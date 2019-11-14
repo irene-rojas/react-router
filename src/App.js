@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import axios from 'axios';
  
 import Home from './components/Home/Home';
 import About from './components/About/About';
@@ -17,6 +18,14 @@ import Accessibility from "./components/Accessibility/Accessibility";
 import usFlag from "./images/icn-us-flag-21px.png";
 
 function App() {
+
+  const [niccs, setNiccs] = useState([]);
+
+  useEffect(() => {
+
+  }, []);
+
+
   return (
     <BrowserRouter>
 
