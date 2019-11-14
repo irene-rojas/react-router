@@ -21,7 +21,6 @@ function NICCSPolicy() {
             <div className="niccsBodyDiv">
                 {niccsBody.value}
             </div>
-            
         </div>
     )
 
