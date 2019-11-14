@@ -1,27 +1,37 @@
-.footerNavDiv {
-    /* display: grid; */
-    /* grid-template-rows: auto; */
-    /* grid-template-columns: 1/-1; */
-    position: absolute;
+.footerDiv {
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 45px;
-    padding-bottom: 10px;
+    margin-top: 45px;  
+    padding-top: 50px;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 20fr 60fr 20fr;
+    vertical-align: center;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+.footerContent {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(8, auto);
+}
+
+a:hover {
+    color: #0775a8;
 }
 
 .footerText {
-    margin: auto;
-    padding-bottom: 0px;
-    padding-left: 8.133px;
-    padding-right: 8.133px;
-    padding-top: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 1% 0;
     text-align: left;
     vertical-align: center;
     text-decoration: none;
@@ -30,16 +40,8 @@
     font-size: 14px;
 }
 
-.footerContent {
-    border-top: 1px solid rgb(204, 204, 204);
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(7, auto);
-    vertical-align: center;
-}
-
 .footerHome {
-    grid-row: 1/2;;
+    grid-row: 1/2;
     grid-column: 1/2;
 }
 
@@ -64,9 +66,23 @@
 }
 
 #dhsLogo {
-    grid-row: 1/2;
-    grid-column: 6/7;
-    padding-left: 50px;
-    width: 179px;
-    height: 61px;
+    grid-row: 1/-1;
+    grid-column: 7/8;
+    /* margin-left: 100px; */
+    max-width: 100%;
+    height: auto;
+    right: 0;
+}
+
+.niccsContentDiv {
+    background-color: white;
+    padding-bottom: 175px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20fr 60fr 20fr;
+}
+
+.niccsBodyDiv {
+    grid-row: auto;
+    grid-column: 2/3;
 }

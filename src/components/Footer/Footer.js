@@ -2,20 +2,21 @@ import React from 'react';
 import "./Footer.css";
 import dhsLogo from "../../images/dhs_logo_official_0.png";
  
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
  
 const Footer = () => {
     return (
-       <div className="footerNavDiv">
+       <div className="footerDiv">
+
            <div className="footerContent">
-            <NavLink to="/" className="footerHome footerText">Home</NavLink>
+            <Link to="/" className="footerHome footerText">Home</Link>
             <br/>
             <span className="footerPrivacy footerText">Privacy Policy</span>
-            <NavLink to="/niccs_policy" className="footerNICCS footerText">NICCS Policy</NavLink>
+            <Link to="/niccs_policy" className="footerNICCS footerText">NICCS Policy</Link>
             <br/>
-            <NavLink to="/nofear" className="footerNoFear footerText">No Fear Act Policy</NavLink>
+            <Link to="/nofear" className="footerNoFear footerText">No Fear Act Policy</Link>
             <br/>
-            <NavLink to="/access" className="footerAccess footerText">Accessibility</NavLink>
+            <Link to="/access" className="footerAccess footerText">Accessibility</Link>
             <br/>
             <img src={dhsLogo} alt="DHS Logo" id="dhsLogo" />
 
