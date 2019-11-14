@@ -18,9 +18,6 @@ p {
 }
 
 .dhsHeader {
-  /* display: grid; */
-  /* grid-template-rows: auto; */
-  /* grid-template-columns: repeat(2, auto); */
   text-align: center;
   background-color: black;
   color: rgb(255, 255, 255);
@@ -34,10 +31,18 @@ p {
   font-kerning: auto;
   font-stretch: 100%;
   font-optical-sizing: auto;
-
 }
 
 #usFlag {
   vertical-align: center;
   margin-right: 5px;
+}
+
+#officialFed {
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  font-family: "Times New Roman";
+  line-height: 2.5em;
+  padding: 0px;
 }

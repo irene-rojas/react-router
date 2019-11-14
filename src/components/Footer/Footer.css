@@ -4,10 +4,10 @@
     width: 100%;
     text-align: center;
     margin-top: 45px;  
-    padding-top: 50px;
+    /* padding-top: 50px; */
     padding-left: 1px;
-    padding-right: 1px;
     padding-bottom: 10px;
+    padding-right: 1px;
     background-color: white;
     display: grid;
     grid-template-rows: repeat(2, auto);
@@ -65,13 +65,15 @@ a:hover {
     grid-column: 5/6;
 }
 
-#dhsLogo {
+.imgDiv {
     grid-row: 1/-1;
     grid-column: 7/8;
-    /* margin-left: 100px; */
+}
+
+#dhsLogo {
     max-width: 100%;
     height: auto;
-    right: 0;
+    float: right;
 }
 
 .niccsContentDiv {
