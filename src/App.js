@@ -25,7 +25,6 @@ function App() {
     <div className="App">
 
         <div className="dhsHeader">
-          
           <p id="officialFed">
             <img src={usFlag} id="usFlag" alt="US Flag signifying that this is United States Federal Government Website" />
           Official website of the Department of Homeland Security</p>
