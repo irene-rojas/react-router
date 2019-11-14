@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
  
 import Home from './components/Home/Home';
 import About from './components/About/About';
@@ -11,24 +11,13 @@ import Training from './components/Training/Training';
 import Navigation from './components/Navigation/Navigation';
 import Education from "./components/Education/Education";
 import Develop from "./components/Develop/Develop";
-import NICCS_Policy from "./components/NICCS_Policy/NICCS_Policy";
+import NICCSPolicy from "./components/NICCSPolicy/NICCSPolicy";
 import Footer from "./components/Footer/Footer";
 import NoFear from "./components/NoFear/NoFear";
 import Accessibility from "./components/Accessibility/Accessibility";
 import usFlag from "./images/icn-us-flag-21px.png";
 
 function App() {
-
-  const [niccs, setNiccs] = useState([]);
-
-  useEffect(() => {
-    axios.get(`https://dev-irene-react.pantheonsite.io/jsonapi/node/page/188ae9f2-cc8e-47aa-b1d3-f12d100aa3db`)
-    .then(res => {
-      setNiccs(res);
-      console.log(res);
-    });
-  }, []);
-
 
   return (
     <BrowserRouter>
@@ -57,10 +46,10 @@ function App() {
 
       </header>
 
-      <footer>
+      <footer className="footer">
         <Footer />
           <Switch>
-            <Route path="/niccs_policy" component={NICCS_Policy} />
+            <Route path="/niccs_policy" component={NICCSPolicy} />
             <Route path="/nofear" component={NoFear} />
             <Route path="/access" component={Accessibility} />
           </Switch>
