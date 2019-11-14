@@ -22,8 +22,6 @@ function App() {
 
     <div className="App">
 
-      
-
         <div className="dhsHeader">
           
           <p id="officialFed">
@@ -35,12 +33,12 @@ function App() {
         <Navigation />
         {/* start navDiv */}
           <Switch>
-          <Route path="/" component={Home} exact/>
-          <Route path="/about" component={About}/>
-          <Route path="/training" component={Training}/>
-          <Route path="/education" component={Education}/>
-          <Route path="/develop" component={Develop}/>
-          <Route component={Error}/>
+            <Route path="/" component={Home} exact/>
+            <Route path="/about" component={About}/>
+            <Route path="/training" component={Training}/>
+            <Route path="/education" component={Education}/>
+            <Route path="/develop" component={Develop}/>
+            {/* <Route component={Error}/> */}
         </Switch>
         {/* end navDiv */}
 
