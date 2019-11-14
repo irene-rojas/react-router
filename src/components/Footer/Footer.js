@@ -7,20 +7,25 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
        <div className="footerDiv">
+           {/* <div className="lineWrapper"> */}
+            <div className="footerContent">
+                <Link to="/" className="footerHome footerText">Home</Link>
+                <br/>
+                <span className="footerPrivacy footerText">Privacy Policy</span>
+                <Link to="/niccs_policy" className="footerNICCS footerText">NICCS Policy</Link>
+                <br/>
+                <Link to="/nofear" className="footerNoFear footerText">No Fear Act Policy</Link>
+                <br/>
+                <Link to="/access" className="footerAccess footerText">Accessibility</Link>
+                <br/>
+                <div className="imgDiv">
+                    <img src={dhsLogo} alt="DHS Logo" id="dhsLogo" />
+                </div>
 
-           <div className="footerContent">
-            <Link to="/" className="footerHome footerText">Home</Link>
-            <br/>
-            <span className="footerPrivacy footerText">Privacy Policy</span>
-            <Link to="/niccs_policy" className="footerNICCS footerText">NICCS Policy</Link>
-            <br/>
-            <Link to="/nofear" className="footerNoFear footerText">No Fear Act Policy</Link>
-            <br/>
-            <Link to="/access" className="footerAccess footerText">Accessibility</Link>
-            <br/>
-            <img src={dhsLogo} alt="DHS Logo" id="dhsLogo" />
-
+            {/* </div> */}
            </div>
+
+
 
        </div>
     );
