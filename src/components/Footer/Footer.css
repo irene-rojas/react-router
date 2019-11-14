@@ -1,21 +1,23 @@
-.footerNavDiv {
-    /* display: grid; */
-    /* grid-template-rows: auto; */
-    /* grid-template-columns: 1/-1; */
+.footerDiv {
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 45px;
-    padding-bottom: 10px;
+    margin-top: 45px;  
+    padding-top: 50px;
     padding-left: 1px;
     padding-right: 1px;
-    padding-top: 50px;
+    padding-bottom: 10px;
     background-color: white;
-    z-index: 1000;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 20fr 60fr 20fr;
+    border-top: 1px solid rgb(204, 204, 204);
+    vertical-align: center;
+}
+
+.footerContent {
+    background-color: gray;
 }
 
 .footerText {
@@ -32,16 +34,8 @@
     font-size: 14px;
 }
 
-.footerContent {
-    border-top: 1px solid rgb(204, 204, 204);
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(7, auto);
-    vertical-align: center;
-}
-
 .footerHome {
-    grid-row: 1/2;;
+    grid-row: 1/2;
     grid-column: 1/2;
 }
 
@@ -78,7 +72,7 @@
     padding-bottom: 175px;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 25fr 50fr 25fr;
+    grid-template-columns: 20fr 60fr 20fr;
 }
 
 .niccsBodyDiv {
