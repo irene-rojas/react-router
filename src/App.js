@@ -7,7 +7,7 @@ import axios from 'axios';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Training from './components/Training/Training';
-import Error from './components/Error/Error';
+// import Error from './components/Error/Error';
 import Navigation from './components/Navigation/Navigation';
 import Education from "./components/Education/Education";
 import Develop from "./components/Develop/Develop";
@@ -22,7 +22,11 @@ function App() {
   const [niccs, setNiccs] = useState([]);
 
   useEffect(() => {
-
+    axios.get(`https://dev-irene-react.pantheonsite.io/jsonapi/node/page/188ae9f2-cc8e-47aa-b1d3-f12d100aa3db`)
+    .then(res => {
+      setNiccs(res);
+      console.log(res);
+    });
   }, []);
 
 
