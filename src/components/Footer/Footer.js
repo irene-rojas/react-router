@@ -7,12 +7,14 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
        <div className="footerDiv">
-           {/* <div className="lineWrapper"> */}
+
             <div className="footerContent">
                 <Link to="/" className="footerHome footerText">Home</Link>
                 <br/>
                 <span className="footerPrivacy footerText">Privacy Policy</span>
                 <Link to="/niccs_policy" className="footerNICCS footerText">NICCS Policy</Link>
+                <br/>
+                <Link to="foia_policy" className="footerFOIA footerText">FOIA Policy</Link>
                 <br/>
                 <Link to="/nofear" className="footerNoFear footerText">No Fear Act Policy</Link>
                 <br/>
@@ -22,10 +24,7 @@ const Footer = () => {
                     <img src={dhsLogo} alt="DHS Logo" id="dhsLogo" />
                 </div>
 
-            {/* </div> */}
            </div>
-
-
 
        </div>
     );

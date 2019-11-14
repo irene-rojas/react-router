@@ -1,5 +1,4 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import axios from 'axios';
@@ -15,6 +14,7 @@ import NICCSPolicy from "./components/NICCSPolicy/NICCSPolicy";
 import Footer from "./components/Footer/Footer";
 import NoFear from "./components/NoFear/NoFear";
 import Accessibility from "./components/Accessibility/Accessibility";
+import FOIAPolicy from './components/FOIAPolicy/FOIAPolicy';
 import usFlag from "./images/icn-us-flag-21px.png";
 
 function App() {
@@ -49,6 +49,7 @@ function App() {
         <Footer />
           <Switch>
             <Route path="/niccs_policy" component={NICCSPolicy} />
+            <Route path="/foia_policy" component={FOIAPolicy} />
             <Route path="/nofear" component={NoFear} />
             <Route path="/access" component={Accessibility} />
           </Switch>

@@ -3,13 +3,13 @@ import axios from 'axios';
 
 function NICCSPolicy() {
 
-    const [niccs, setNiccs] = useState([]);
+    // const [niccs, setNiccs] = useState([]);
     const [niccsBody, setNiccsBody] = useState("");
   
     useEffect(() => {
       axios.get(`https://dev-irene-react.pantheonsite.io/jsonapi/node/page/188ae9f2-cc8e-47aa-b1d3-f12d100aa3db`)
       .then(res => {
-        setNiccs(res.data.data.attributes);
+        // setNiccs(res.data.data.attributes);
         // console.log(res.data.data.attributes);
         setNiccsBody(res.data.data.attributes.body);
         // console.log(res.data.data.attributes.body.value);
@@ -21,7 +21,6 @@ function NICCSPolicy() {
             <div className="niccsBodyDiv">
                 {niccsBody.value}
             </div>
-            
         </div>
     )
 
