@@ -12,20 +12,26 @@
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: 20fr 60fr 20fr;
-    border-top: 1px solid rgb(204, 204, 204);
     vertical-align: center;
+    border-top: 1px solid rgb(204, 204, 204);
 }
 
 .footerContent {
-    background-color: gray;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(8, auto);
+}
+
+a:hover {
+    color: #0775a8;
 }
 
 .footerText {
-    margin: auto;
-    padding-bottom: 0px;
-    padding-left: 8.133px;
-    padding-right: 8.133px;
-    padding-top: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 1% 0;
     text-align: left;
     vertical-align: center;
     text-decoration: none;
@@ -60,11 +66,12 @@
 }
 
 #dhsLogo {
-    grid-row: 1/2;
-    grid-column: 6/7;
-    padding-left: 50px;
-    width: 179px;
-    height: 61px;
+    grid-row: 1/-1;
+    grid-column: 7/8;
+    /* margin-left: 100px; */
+    max-width: 100%;
+    height: auto;
+    right: 0;
 }
 
 .niccsContentDiv {
