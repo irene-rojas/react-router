@@ -17,7 +17,7 @@ const Footer = () => {
                 <li className="footerLine"><Link to="/access" className="footerAccess footerText">Accessibility</Link></li>
             </ul>
 
-            <div className="imgDiv">
+            <div className="dhsLogoDiv">
                 <img src={dhsLogo} alt="DHS Logo" id="dhsLogo" />
             </div>
 
