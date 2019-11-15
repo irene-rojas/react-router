@@ -8,23 +8,18 @@ const Footer = () => {
     return (
        <div className="footerDiv">
 
-            <div className="footerContent">
-                <Link to="/" className="footerHome footerText">Home</Link>
-                <br/>
-                <span className="footerPrivacy footerText">Privacy Policy</span>
-                <Link to="/niccs_policy" className="footerNICCS footerText">NICCS Policy</Link>
-                <br/>
-                <Link to="foia_policy" className="footerFOIA footerText">FOIA Policy</Link>
-                <br/>
-                <Link to="/nofear" className="footerNoFear footerText">No Fear Act Policy</Link>
-                <br/>
-                <Link to="/access" className="footerAccess footerText">Accessibility</Link>
-                <br/>
-                <div className="imgDiv">
-                    <img src={dhsLogo} alt="DHS Logo" id="dhsLogo" />
-                </div>
+            <ul className="footerMenu">
+                <li><Link to="/" className="footerHome footerText">Home</Link></li>
+                <li><span className="footerPrivacy footerText">Privacy Policy</span></li>
+                <li><Link to="/niccs_policy" className="footerNICCS footerText">NICCS Policy</Link></li>
+                <li><Link to="foia_policy" className="footerFOIA footerText">FOIA Policy</Link></li>
+                <li><Link to="/nofear" className="footerNoFear footerText">No Fear Act Policy</Link></li>
+                <li><Link to="/access" className="footerAccess footerText">Accessibility</Link></li>
+            </ul>
 
-           </div>
+            <div className="imgDiv">
+                <img src={dhsLogo} alt="DHS Logo" id="dhsLogo" />
+            </div>
 
        </div>
     );

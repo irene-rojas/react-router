@@ -16,7 +16,7 @@
     border-top: 1px solid rgb(204, 204, 204);
 }
 
-.footerContent {
+.footerMenu {
     grid-row: 2/3;
     grid-column: 2/3;
     display: grid;
@@ -38,6 +38,10 @@ a:hover {
     color: black;
     font-family: "Open Sans", Arial;
     font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .footerHome {
