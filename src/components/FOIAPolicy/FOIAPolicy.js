@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import "../Components.css";
 
 function FOIAPolicy() {
 
@@ -13,7 +12,6 @@ function FOIAPolicy() {
           setFoiaTitle(res.data.data.attributes.title);
           // console.log(res.data.data.attributes);
           setFoiaBody(res.data.data.attributes.body);
-          // console.log(res.data.data.attributes.body.value);
         });
       }, []);
 

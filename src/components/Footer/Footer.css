@@ -74,7 +74,7 @@ a:hover {
     grid-column: 6/7;
 }
 
-.imgDiv {
+.dhsLogoDiv {
     grid-row: 1/-1;
     grid-column: 7/8;
 }
@@ -86,14 +86,6 @@ a:hover {
 }
 
 .niccsContentDiv {
-    background-color: white;
-    padding-bottom: 175px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 20fr 60fr 20fr;
-}
-
-.niccsBodyDiv {
-    grid-row: auto;
+    grid-row: 1/2;
     grid-column: 2/3;
 }
