@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "./FOIAPolicy.css"
 
 function FOIAPolicy() {
 
@@ -21,8 +22,10 @@ function FOIAPolicy() {
 
     return (
         <div className="foiaContentDiv">
-          <h1 className="titleDiv foiaTitleDiv">{foiaTitle}</h1>
-          <div dangerouslySetInnerHTML={createMarkup()} className="foiaBodyDiv"></div>
+          <div className="foiaDrupal">
+            <h1 className="titleDiv foiaTitleDiv">{foiaTitle}</h1>
+            <div dangerouslySetInnerHTML={createMarkup()} className="foiaBodyDiv"></div>
+          </div>
         </div>
     )
 
