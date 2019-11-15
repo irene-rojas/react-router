@@ -3,26 +3,29 @@ import axios from 'axios';
 
 function FOIAPolicy() {
 
-    const [foia, setFoia] = useState([]);
+    const [foiaBody, setFoiaBody] = useState([]);
+    const [foiaTitle, setFoiaTitle] = useState("");
 
     useEffect(() => {
         axios.get(`https://dev-irene-react.pantheonsite.io/jsonapi/node/page/c2dd11bf-0e87-4eda-8b2d-9af3a8998b6f`)
         .then(res => {
-          // setNiccs(res.data.data.attributes);
+          setFoiaTitle(res.data.data.attributes.title);
           // console.log(res.data.data.attributes);
-          setFoia(res.data.data.attributes.body);
+          setFoiaBody(res.data.data.attributes.body);
           // console.log(res.data.data.attributes.body.value);
         });
       }, []);
 
+      function createMarkup() {
+        return {__html: `${foiaBody.value}`}
+      }
+
     return (
         <div className="foiaContentDiv">
-            <div className="foiaBodyDiv">
-                {foia.value}
-            </div>
+          <h1>{foiaTitle}</h1>
+          <div dangerouslySetInnerHTML={createMarkup()} className="foiaBodyDiv"></div>
         </div>
     )
-
 
 }
 

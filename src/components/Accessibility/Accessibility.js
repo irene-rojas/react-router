@@ -3,23 +3,26 @@ import axios from 'axios';
 
 function Accessibility() {
 
-    const [access, setAccess] = useState([]);
+    const [accessBody, setAccessBody] = useState([]);
+    const [accessTitle, setAccessTitle] = useState("");
 
     useEffect(() => {
         axios.get(`https://dev-irene-react.pantheonsite.io/jsonapi/node/page/3d023c31-4c00-4669-bb8f-52b05286b1d6`)
         .then(res => {
-            setAccess(res.data.data.attributes.body);
+            setAccessTitle(res.data.data.attributes.title);
+            setAccessBody(res.data.data.attributes.body);
             // console.log(res.data.data.attributes.body);
         })
     }, []);
 
+    function createMarkup() {
+      return {__html: `${accessBody.value}`}
+    }
 
     return (
         <div className="accessContentDiv">
-            <div className="accessBodyDiv">
-                {access.value}
-            </div>
-
+            <h1>{accessTitle}</h1>
+            <div dangerouslySetInnerHTML={createMarkup()} className="accessBodyDiv"></div>
         </div>
     )
 }

@@ -3,21 +3,26 @@ import axios from 'axios';
 
 function NoFear() {
 
-    const [noFear, setNoFear] = useState([]);
+    const [noFearBody, setNoFearBody] = useState([]);
+    const [noFearTitle, setNoFearTitle] = useState("");
 
     useEffect(() => {
         axios.get(`https://dev-irene-react.pantheonsite.io/jsonapi/node/page/63730352-7b79-465b-a66d-8ab542b802c9`)
         .then(res => {
-            setNoFear(res.data.data.attributes.body);
+            setNoFearTitle(res.data.data.attributes.title);
+            setNoFearBody(res.data.data.attributes.body);
             // console.log(res.data.data.attributes.body);
         });
     }, []);
+    
+    function createMarkup() {
+        return {__html: `${noFearBody.value}`}
+    }
 
     return (
         <div className="noFearContentDiv">
-            <div className="noFearBodyDiv">
-                {noFear.value}
-            </div>
+            <h1>{noFearTitle}</h1>
+            <div dangerouslySetInnerHTML={createMarkup()} className="noFearBodyDiv"></div>
         </div>
     )
 
