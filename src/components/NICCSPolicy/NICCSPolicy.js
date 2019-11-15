@@ -27,6 +27,7 @@ function NICCSPolicy() {
             <h1 className="titleDiv niccsTitleDiv">{niccsTitle}</h1>
             <div dangerouslySetInnerHTML={createMarkup()} className="niccsBodyDiv"></div>
           </div>
+
         </div>
     )
 
