@@ -1,0 +1,54 @@
+ul, p, h2, h1, .titleDiv {
+    text-align: left;
+}
+
+h1 {
+    font-family: "Open Sans", Arial;
+    font-weight: 300;
+    font-stretch: normal;
+    line-height: 1em;
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 26px;
+    margin: 0px;
+    line-height: 1.1em;
+    font-family: "Open Sans", Arial;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px;
+}
+
+ul {
+    line-height: 1.5em;
+    font-size: 16px;
+    list-style-type: disc;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: 0;
+    border: 0;
+}
+
+li {
+    margin: 0;
+    border: 0;
+    font: inherit;
+    padding: 0;
+    list-style-type: disc;
+}
+  
+p {
+    font-size: 16px;
+    color: #000000;
+    padding: 0.9em 0 0.9em;
+    margin: 0;
+    border: 0;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: #0775a8;
+}

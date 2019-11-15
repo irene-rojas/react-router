@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "../Components.css";
 
 function NoFear() {
 
@@ -21,7 +22,7 @@ function NoFear() {
 
     return (
         <div className="noFearContentDiv">
-            <h1>{noFearTitle}</h1>
+            <h1 className="titleDiv noFearTitleDiv">{noFearTitle}</h1>
             <div dangerouslySetInnerHTML={createMarkup()} className="noFearBodyDiv"></div>
         </div>
     )
