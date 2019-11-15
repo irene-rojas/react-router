@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import "../Components.css";
 
 function Accessibility() {
 
@@ -21,7 +22,7 @@ function Accessibility() {
 
     return (
         <div className="accessContentDiv">
-            <h1>{accessTitle}</h1>
+            <h1 className="titleDiv accessTitleDiv">{accessTitle}</h1>
             <div dangerouslySetInnerHTML={createMarkup()} className="accessBodyDiv"></div>
         </div>
     )

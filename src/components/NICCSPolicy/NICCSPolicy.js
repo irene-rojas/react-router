@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "../Components.css";
+import "./NICCSPolicy.css";
 
 function NICCSPolicy() {
 
@@ -22,7 +24,7 @@ function NICCSPolicy() {
 
     return (
         <div className="niccsContentDiv">
-          <h1>{niccsTitle}</h1>
+          <h1 className="titleDiv niccsTitleDiv">{niccsTitle}</h1>
           <div dangerouslySetInnerHTML={createMarkup()} className="niccsBodyDiv"></div>
         </div>
     )
