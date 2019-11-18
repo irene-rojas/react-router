@@ -10,7 +10,9 @@ const Footer = () => {
 
             <ul id="footerMenu" className="footerMenu">
                 <li id="footerHome" className="footerLine">
-                    <Link to="/" className="footerHome footerText">Home</Link>
+                    <Link to="/" className="footerHome footerText">
+                        Home
+                    </Link>
                 </li>
 
                 <li id="footerPrivacy" className="footerLine">
@@ -18,19 +20,27 @@ const Footer = () => {
                 </li>
 
                 <li id="footerNICCS" className="footerLine">
-                    <Link to="/niccs_policy" className="footerNICCS footerText">NICCS Policy</Link>
+                    <Link to="/niccs_policy" className="footerNICCS footerText">
+                        NICCS Policy
+                    </Link>
                 </li>
 
                 <li id="footerFOIA" className="footerLine">
-                    <Link to="foia_policy" className="footerFOIA footerText">FOIA Policy</Link>
+                    <Link to="foia_policy" className="footerFOIA footerText">
+                        FOIA Policy
+                    </Link>
                 </li>
 
                 <li id="footerNoFear" className="footerLine">
-                    <Link to="/nofear" className="footerNoFear footerText">No Fear Act Policy</Link>
+                    <Link to="/nofear" className="footerNoFear footerText">
+                        No Fear Act Policy
+                    </Link>
                 </li>
 
                 <li id="footerAccess" className="footerLine">
-                    <Link to="/access" className="footerAccess footerText">Accessibility</Link>
+                    <Link to="/access" className="footerAccess footerText">
+                        Accessibility
+                    </Link>
                 </li>
             </ul>
 
