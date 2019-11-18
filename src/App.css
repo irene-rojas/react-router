@@ -43,6 +43,7 @@ html, body {
   padding: 0px;
 }
 
+/* header */
 .header {
   margin-top: 0px;
   grid-row: 2/3;

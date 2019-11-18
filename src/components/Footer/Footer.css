@@ -9,29 +9,14 @@
     padding-bottom: 10px;
     padding-right: 1px;
     background-color: white;
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: 20fr 60fr 20fr;
+    /* display: grid; */
+    /* grid-template-rows: repeat(2, auto); */
+    /* grid-template-columns: 20fr 60fr 20fr; */
     vertical-align: center;
     border-top: 1px solid rgb(204, 204, 204);
 }
 
-#footerMenu {
-    padding: 0px;
-    margin: 0 auto;
-    line-height: 1.5em;
-    font-size: 16px;
-    list-style-type: disc;
-    border: 0px;
-    /* inside footerDiv */
-    grid-row: 2/3;
-    grid-column: 2/3;
-    /* inside #footerMenu */
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(7, auto);
-}
-
+/* text styling */
 a:hover {
     color: #0775a8;
 }
@@ -56,33 +41,51 @@ a:hover {
     font-size: 16px;
 }
 
+/* footer content */
+.footerMenu {
+    padding: 0px;
+    margin: 0 auto;
+    line-height: 1.5em;
+    font-size: 16px;
+    list-style-type: disc;
+    border: 0px;
+    /* word-wrap: nowrap; */
+    /* inside footerDiv */
+    /* grid-row: 2/3; */
+    /* grid-column: 2/3; */
+    /* inside #footerMenu */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(7, auto);
+}
+
 .footerHome {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 1/2;
 }
 
 .footerPrivacy {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 2/3;
 }
 
 .footerNICCS {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 3/4;
 }
 
 .footerFOIA {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 4/5;
 }
 
 .footerNoFear {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 5/6;
 }
 
 .footerAccess {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 6/7;
 }
 
@@ -97,22 +100,22 @@ a:hover {
     float: right;
 }
 
-.niccsContentDiv {
+/* .niccsContentDiv {
     grid-row: 1/2;
     grid-column: 2/3;
-}
+} */
 
-.foiaContentDiv {
+/* .foiaContentDiv {
     grid-row: 1/2;
     grid-column: 2/3;
-}
+} */
 
-.noFearContentDiv {
+/* .noFearContentDiv {
     grid-row: 1/2;
     grid-column: 2/3;
-}
+} */
 
-.accessContentDiv {
+/* .accessContentDiv {
     grid-row: 1/2;
     grid-column: 2/3;
-}
+} */
