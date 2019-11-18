@@ -1,37 +1,4 @@
-.footerDiv {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    margin-top: 45px;  
-    /* padding-top: 50px; */
-    padding-left: 1px;
-    padding-bottom: 10px;
-    padding-right: 1px;
-    background-color: white;
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: 20fr 60fr 20fr;
-    vertical-align: center;
-    border-top: 1px solid rgb(204, 204, 204);
-}
-
-#footerMenu {
-    padding: 0px;
-    margin: 0 auto;
-    line-height: 1.5em;
-    font-size: 16px;
-    list-style-type: disc;
-    border: 0px;
-    /* inside footerDiv */
-    grid-row: 2/3;
-    grid-column: 2/3;
-    /* inside #footerMenu */
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(7, auto);
-}
-
+/* text styling */
 a:hover {
     color: #0775a8;
 }
@@ -56,39 +23,86 @@ a:hover {
     font-size: 16px;
 }
 
-.footerHome {
+
+/* footer content */
+.footerDiv {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;  
+    /* padding-top: 50px; */
+    padding-left: 1px;
+    padding-bottom: 10px;
+    padding-right: 1px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20fr 60fr 20fr;
+    vertical-align: center;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+.footerMenuDiv {
+    /* inside footerDiv */
+    grid-row: 1/-1;
+    grid-column: 2/3;
+    /* inside footerMenuDiv */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, auto);
+}
+
+.footerList {
+    padding: 0px;
+    /* margin: 0 auto; */
+    line-height: 1.5em;
+    font-size: 16px;
+    list-style-type: disc;
+    border: 0px;
+    /* inside footerMenuDiv */
     grid-row: 1/2;
+    grid-column: 1/2;
+    /* inside footerList */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(6, auto);
+}
+
+.footerHome {
+    grid-row: 1/-1;
     grid-column: 1/2;
 }
 
 .footerPrivacy {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 2/3;
 }
 
 .footerNICCS {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 3/4;
 }
 
 .footerFOIA {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 4/5;
 }
 
 .footerNoFear {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 5/6;
 }
 
 .footerAccess {
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 6/7;
 }
 
 .dhsLogoDiv {
+    /* inside footerMenuDiv */
     grid-row: 1/-1;
-    grid-column: 7/8;
+    grid-column: 2/3;
 }
 
 #dhsLogo {
@@ -97,22 +111,25 @@ a:hover {
     float: right;
 }
 
-.niccsContentDiv {
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
 
-.foiaContentDiv {
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
 
-.noFearContentDiv {
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
 
-.accessContentDiv {
+/* .niccsContentDiv {
     grid-row: 1/2;
     grid-column: 2/3;
-}
+} */
+
+/* .foiaContentDiv {
+    grid-row: 1/2;
+    grid-column: 2/3;
+} */
+
+/* .noFearContentDiv {
+    grid-row: 1/2;
+    grid-column: 2/3;
+} */
+
+/* .accessContentDiv {
+    grid-row: 1/2;
+    grid-column: 2/3;
+} */
