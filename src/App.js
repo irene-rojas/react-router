@@ -30,19 +30,18 @@ function App() {
           <strong>Official website of the Department of Homeland Security</strong></p>
         </div>
 
-        <header>
-        <Navigation />
-        {/* start navDiv */}
-          <Switch>
-            <Route path="/" component={Home} exact/>
-            <Route path="/about" component={About}/>
-            <Route path="/training" component={Training}/>
-            <Route path="/education" component={Education}/>
-            <Route path="/develop" component={Develop}/>
-            {/* <Route component={Error}/> */}
-        </Switch>
+        <header className="header">
+          <Navigation />
+          {/* start navDiv */}
+            <Switch>
+              <Route path="/" component={Home} exact/>
+              <Route path="/about" component={About}/>
+              <Route path="/training" component={Training}/>
+              <Route path="/education" component={Education}/>
+              <Route path="/develop" component={Develop}/>
+              {/* <Route component={Error}/> */}
+            </Switch>
         {/* end navDiv */}
-
       </header>
 
       <footer className="footer">
