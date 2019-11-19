@@ -3,7 +3,7 @@ import "./Navigation.css";
 import niccsLogo from "../../images/logo-dark.png";
 import search from "../../images/search-dark.png";
  
-import { Link } from 'react-router-dom';
+import { Link, Dropdown } from 'react-router-dom';
  
 const Navigation = () => {
     return (
@@ -33,7 +33,7 @@ const Navigation = () => {
             <Link to="/about" className="LinkAbout navText">
                About NICCS
             </Link>
-            
+
             <div className="searchIconDiv">
                <img src={search} alt="Search Button" id="search" />
             </div>
