@@ -4,9 +4,6 @@ a:hover {
 }
 
 .footerText {
-    /* margin-top: auto; */
-    /* margin-bottom: auto; */
-    /* padding: 0 1% 0; */
     text-align: left;
     text-decoration: none;
     color: black;
@@ -17,7 +14,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     top: 50%;
-    /* position: relative; */
 }
 
 .footerLine {
@@ -56,7 +52,6 @@ a:hover {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(2, auto);
-    /* margin-top: 23.5px; */
 }
 
 #footerList {
@@ -64,7 +59,6 @@ a:hover {
     line-height: 1.5em;
     font-size: 16px;
     list-style-type: disc;
-    /* border: 0px; */
     /* inside footerMenuDiv */
     grid-row: 1/-1;
     grid-column: 1/2;
