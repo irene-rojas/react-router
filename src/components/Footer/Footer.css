@@ -4,21 +4,25 @@ a:hover {
 }
 
 .footerText {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 0 1% 0;
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
+    /* padding: 0 1% 0; */
     text-align: left;
-    vertical-align: center;
     text-decoration: none;
     color: black;
     font-family: "Open Sans", Arial;
     font-size: 14px;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    /* position: relative; */
 }
 
 .footerLine {
     list-style-type: none;
-    padding: 0px;
+    padding: 0 1% 0;
     margin: 0 auto;
     line-height: 1.5em;
     font-size: 16px;
@@ -31,7 +35,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     text-align: center;
-    margin-top: 45px;  
+    /* margin-top: 45px;   */
     /* padding-top: 50px; */
     padding-left: 1px;
     padding-bottom: 10px;
@@ -52,22 +56,23 @@ a:hover {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(2, auto);
+    /* margin-top: 23.5px; */
 }
 
-.footerList {
+#footerList {
     padding: 0;
-    /* margin: 0 auto; */
     line-height: 1.5em;
     font-size: 16px;
     list-style-type: disc;
-    border: 0px;
+    /* border: 0px; */
     /* inside footerMenuDiv */
     grid-row: 1/-1;
     grid-column: 1/2;
     /* inside footerList */
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(8, auto);
+    grid-template-columns: repeat(6, auto);
+    margin-top: 23.5px;
 }
 
 .footerHome {
@@ -111,26 +116,3 @@ a:hover {
     height: auto;
     float: right;
 }
-
-
-
-
-/* .niccsContentDiv {
-    grid-row: 1/2;
-    grid-column: 2/3;
-} */
-
-/* .foiaContentDiv {
-    grid-row: 1/2;
-    grid-column: 2/3;
-} */
-
-/* .noFearContentDiv {
-    grid-row: 1/2;
-    grid-column: 2/3;
-} */
-
-/* .accessContentDiv {
-    grid-row: 1/2;
-    grid-column: 2/3;
-} */
