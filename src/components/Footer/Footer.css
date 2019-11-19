@@ -13,6 +13,7 @@ a:hover {
     color: black;
     font-family: "Open Sans", Arial;
     font-size: 14px;
+    white-space: nowrap;
 }
 
 .footerLine {
@@ -54,19 +55,19 @@ a:hover {
 }
 
 .footerList {
-    padding: 0px;
+    padding: 0;
     /* margin: 0 auto; */
     line-height: 1.5em;
     font-size: 16px;
     list-style-type: disc;
     border: 0px;
     /* inside footerMenuDiv */
-    grid-row: 1/2;
+    grid-row: 1/-1;
     grid-column: 1/2;
     /* inside footerList */
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(8, auto);
 }
 
 .footerHome {
