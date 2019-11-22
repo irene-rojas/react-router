@@ -4,6 +4,7 @@
     grid-template-rows: repeat(3, auto);
     /* grid-template-columns: 20fr 60fr 20fr; */
     grid-template-columns: 10fr 80fr 10fr;
+    background-color: blue;
 }
 
 .trainingDrupal {
@@ -13,10 +14,12 @@
     /* inside trainingDrupal */
     display: grid;
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2, auto);
+    background-color: coral;
 }
 
 .trainingTitleDiv {
+    /* inside trainingDrupal */
     grid-row: 1/2;
     grid-column: 2/3;
     text-align: center;
@@ -28,23 +31,28 @@
     grid-column: 2/3;
     /* inside trainingBodyDiv */
     display: grid;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(2, auto);
+    background-color: yellow;
 }
 
 .field-items {
-    /* inside trainingDrupal */
+    /* inside .trainingBodyDiv */
     grid-row: 2/3;
-    grid-column: 2/3;
+    grid-column: 1/-1;
     /* inside field-items */
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
     background-color: red;
+}
 
+.titleDiv {
+    background-color: green;
 }
 
 #trainingNiccsSquare {
+    /* inside field-items */
     grid-row: 1/2;
     grid-column: 1/2;
 }
@@ -56,6 +64,11 @@
 
 .trainingMainContent {
     grid-row: 3/4;
-    grid-column: 2/3;
+    grid-column: 1/-1;
     background-color: gray;
+}
+
+.trainingSidebar {
+    grid-row: 4/5;
+    grid-column: 1/-1;
 }
