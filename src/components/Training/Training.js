@@ -23,13 +23,9 @@ function Training() {
   return (
       <div className="trainingContentDiv">
 
-        <div className="trainingDrupal">
+        <h1 className="titleDiv trainingTitleDiv">{trainingTitle}</h1>
 
-          <h1 className="titleDiv trainingTitleDiv">{trainingTitle}</h1>
-
-          <div dangerouslySetInnerHTML={createMarkup()}     className="trainingBodyDiv"></div>
-
-        </div>
+        <div dangerouslySetInnerHTML={createMarkup()}     className="trainingBodyDiv"></div>
 
       </div>
   )
