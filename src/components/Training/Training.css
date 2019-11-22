@@ -1,0 +1,44 @@
+.trainingDrupal {
+    background-color: white;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    /* grid-template-columns: 20fr 60fr 20fr; */
+    grid-template-columns: 10fr 80fr 10fr;
+}
+
+.trainingTitleDiv {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.trainingBodyDiv {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.field-items {
+    /* inside trainingDrupal */
+    grid-row: 2/3;
+    grid-column: 2/3;
+    /* inside field-items */
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+}
+
+#trainingNiccsSquare {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#trainingProviderSquare {
+    grid-row: 1/2;
+    grid-template-columns: 2/3;
+}
+
+.trainingMainContent {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
