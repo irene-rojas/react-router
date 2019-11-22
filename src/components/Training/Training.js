@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "./Training.css";
  
 function Training() {
 
@@ -20,11 +21,16 @@ function Training() {
     }
 
   return (
-      <div className="foiaContentDiv">
-        <div className="foiaDrupal">
+      <div className="trainingContentDiv">
+
+        <div className="trainingDrupal">
+
           <h1 className="titleDiv trainingTitleDiv">{trainingTitle}</h1>
-          <div dangerouslySetInnerHTML={createMarkup()} className="trainingBodyDiv"></div>
+
+          <div dangerouslySetInnerHTML={createMarkup()}     className="trainingBodyDiv"></div>
+
         </div>
+
       </div>
   )
 }
