@@ -10,8 +10,8 @@ function Training() {
    useEffect(() => {
       axios.get(`https://dev-irene-react.pantheonsite.io/jsonapi/node/page/cd81c043-92ec-4f2e-926b-96a0bfcfeae7`)
       .then(res => {
-        setTrainingTitle(res.data.data.attributes.title);
         // console.log(res.data.data.attributes);
+        setTrainingTitle(res.data.data.attributes.title);
         setTrainingBody(res.data.data.attributes.body.value);
       });
     }, []);
