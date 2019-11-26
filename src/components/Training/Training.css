@@ -1,10 +1,15 @@
 .trainingContentDiv {
     padding-bottom: 100px;
+    /* height: 100vh; */
     display: grid;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
     /* grid-template-columns: 20fr 60fr 20fr; */
     grid-template-columns: 10fr 80fr 10fr;
     background-color: blue;
+}
+
+.titleDiv {
+    background-color: purple;
 }
 
 .trainingTitleDiv {
@@ -12,7 +17,6 @@
     grid-row: 1/2;
     grid-column: 2/3;
     text-align: center;
-    background-color: purple;
 }
 
 .trainingBodyDiv {
@@ -21,43 +25,8 @@
     grid-column: 2/3;
     /* inside trainingBodyDiv */
     display: grid;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: auto;
     background-color: yellow;
 }
 
-.field-items {
-    /* inside .trainingBodyDiv */
-    grid-row: 1/2;
-    grid-column: 1/-1;
-    /* inside field-items */
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(2, auto);
-    background-color: red;
-    z-index: 1000;
-}
-
-.trainingNiccsSquare {
-    /* inside field-items */
-    grid-row: 1/2;
-    grid-column: 1/2;
-}
-
-.trainingProviderSquare {
-    grid-row: 1/2;
-    grid-template-columns: 2/3;
-}
-
-.trainingMainContent {
-    /* inside trainingContentDiv */
-    grid-row: 2/3;
-    grid-column: 2/3;
-    background-color: gray;
-}
-
-.trainingSidebar {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    background-color: purple;
-}
