@@ -35,15 +35,16 @@
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
     background-color: red;
+    z-index: 1000;
 }
 
-#trainingNiccsSquare {
+.trainingNiccsSquare {
     /* inside field-items */
     grid-row: 1/2;
     grid-column: 1/2;
 }
 
-#trainingProviderSquare {
+.trainingProviderSquare {
     grid-row: 1/2;
     grid-template-columns: 2/3;
 }
