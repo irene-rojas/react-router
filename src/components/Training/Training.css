@@ -1,15 +1,14 @@
 .trainingContentDiv {
     padding-bottom: 100px;
-    /* height: 100vh; */
     display: grid;
     grid-template-rows: repeat(2, auto);
     /* grid-template-columns: 20fr 60fr 20fr; */
     grid-template-columns: 10fr 80fr 10fr;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .titleDiv {
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 .trainingTitleDiv {
@@ -23,26 +22,46 @@
     /* inside trainingContentDiv */
     grid-row: 2/3;
     grid-column: 2/3;
-    /* inside trainingBodyDiv */
+    /* trainingBodyDiv */
     display: grid;
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: auto;
-    background-color: yellow;
+    grid-template-columns: repeat(4, auto);
+    /* background-color: yellow; */
 }
 
-.trainingTable {
-    background-color: green;
-    align-items: center;
+.field-items {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    /* background-color: green; */
+    text-align: center;
     width: auto;
     border: 0;
-    /* padding: 5px; */
+}
+
+.trainingTextDiv {
+    /* inside trainingBodyDiv */
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    /* trainingTextDiv */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid black;
+    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .trainingMainContent {
-    background-color: gray;
+    /* background-color: gray; */
+    grid-row: 1/-1;
+    grid-column: 1/4;
+    padding: 5px;
 }
 
 .trainingSidebar {
-    /* padding: 5px; */
-    background-color: red;
+    grid-row: 1/-1;
+    grid-column: 4/5;
+    padding: 5px;
+    /* background-color: red; */
+    border-left: 5px solid #ebebeb;
 }
