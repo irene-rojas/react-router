@@ -2,14 +2,14 @@
     padding-bottom: 100px;
     display: grid;
     grid-template-rows: repeat(2, auto);
-    /* grid-template-columns: 20fr 60fr 20fr; */
-    grid-template-columns: 10fr 80fr 10fr;
+    grid-template-columns: 20fr 60fr 20fr;
+    /* grid-template-columns: 10fr 80fr 10fr; */
     /* background-color: blue; */
 }
 
-.titleDiv {
-    /* background-color: purple; */
-}
+/* .titleDiv {
+    background-color: purple;
+} */
 
 .trainingTitleDiv {
     /* inside trainingContentDiv */
@@ -44,11 +44,39 @@
     color: white;
 }
 
+.niccsSquare:hover, .providerSquare:hover, .fedvteSquare:hover, .veteransSquare:hover {
+    position: relative;
+    text-align: center;
+    color: white;
+    opacity: 0.6;
+    background-color: rgba(0,0,0,0.55);
+}
+
+/* .trainSquareImg:hover {
+    position: relative;
+    text-align: center;
+    color: white;
+    opacity: 0.6;
+    background: black;
+    background-color: rgba(0,0,0,0.55);
+} */
+
 .trainHeader {
     position: absolute;
     top: 50%;
     left: 50%;
     text-align: center;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    text-shadow: 0px 1px 10px black;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.trainHeader {
+
+    opacity: 1;
 }
 
 .trainingTextDiv {
