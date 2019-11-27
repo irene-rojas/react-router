@@ -10,7 +10,7 @@
 .eduIntroText {
     font-size: 1.25em;
     line-height: 1.25;
-    margin: 2rem 0;
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -51,23 +51,6 @@
     color: white;
 }
 
-/* .niccsSquare:hover, .providerSquare:hover, .fedvteSquare:hover, .veteransSquare:hover {
-    position: relative;
-    text-align: center;
-    color: white;
-    opacity: 0.6;
-    background-color: rgba(0,0,0,0.55);
-} */
-
-/* .trainSquareImg:hover {
-    position: relative;
-    text-align: center;
-    color: white;
-    opacity: 0.6;
-    background: black;
-    background-color: rgba(0,0,0,0.55);
-} */
-
 .eduHeader {
     position: absolute;
     top: 50%;
@@ -80,7 +63,6 @@
     font-weight: 600;
     opacity: 1;
 }
-
 
 .eduTextDiv {
     /* inside trainingBodyDiv */
