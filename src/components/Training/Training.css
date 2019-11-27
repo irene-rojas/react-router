@@ -38,6 +38,19 @@
     border: 0;
 }
 
+.niccsSquare, .providerSquare, .fedvteSquare, .veteransSquare {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.trainHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
 .trainingTextDiv {
     /* inside trainingBodyDiv */
     grid-row: 2/3;
